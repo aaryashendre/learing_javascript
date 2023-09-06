@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #hide {
+        display: none;
+    }
+
+    p {
+        display: block;
+    }
+
+    #pra1{
+        display: none;
+    }
+</style>
+
+<body>
+    <button id="show">show more</button>
+    <button id="hide">less..</button>
+    <p id="pra">A paragraph is a series of sentences that are organized and coherent, and are all related to a single topic.</p>
+    <p id="pra1">Almost every piece of writing you do that is longer than a few sentences should be organized into paragraphs.</p>
+</body>
+
+<script>
+    const show = document.getElementById("show")
+    const hide = document.getElementById("hide")
+    const pra = document.getElementById("pra")
+
+    show.addEventListener("click", () => {
+        pra1.style.display = "block"
+        show.style.display = "none"
+        hide.style.display = "block"
+    })
+
+    hide.addEventListener("click", () => {
+        pra1.style.display = "none"
+        hide.style.display = "none"
+        show.style.display = "block"
+    })
+
+    pra.addEventListener("mouseover", () => {
+        pra.style.color = "red"
+    })
+
+    pra.addEventListener("mouseout", () => {
+        pra.style.color = "black"
+    })
+
+    pra.addEventListener("click", () => {
+        pra.style.color = "blue"
+    })
+
+</script>
+
+</html>
