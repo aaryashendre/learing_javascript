@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>i</title>
+</head>
+<style>
+    body {
+        cursor: pointer;
+    }
+
+    h1 {
+        text-align: center;
+        margin-top: 300px;
+
+    }
+
+    /* h1:hover{
+        color: red;
+    } */
+</style>
+
+<body>
+    <h1 id="text">hello world</h1>
+</body>
+<script>
+
+    const text = document.getElementById("text")
+
+    text.addEventListener("mouseover" ,function () {
+
+        text.style.color ="red"
+        
+    })
+    text.addEventListener("mouseout" ,function () {
+
+        text.style.color =""
+        
+    })
+    text.addEventListener("click" ,function () {
+
+        text.style.color ="blue"
+        
+    })
+
+</script>
+
+</html>
